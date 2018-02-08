@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Animation.AppCompat.Dialog"
+    android:layout_width="match_parent"
+    android:elevation="24dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        style="@style/Animation.AppCompat.Dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                style="@style/Base.TextAppearance.Widget.AppCompat.Toolbar.Title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/_10sdp"
+                android:weightSum="2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1.5"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Forgot password"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="bold|normal" />
+
+                <ImageView
+                    android:id="@+id/imgCrossDialogForgetId"
+                    android:layout_width="2dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="end"
+                    android:layout_weight=".5"
+                    android:gravity="center"
+                    android:padding="@dimen/_4sdp"
+                    android:src="@drawable/cross"
+                    android:textColor="@color/colorlightblack"
+                    android:textSize="@dimen/_14sdp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimaryDark" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4sdp"
+
+                android:layout_marginRight="@dimen/_10sdp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:maxLines="3"
+                    android:padding="@dimen/_4sdp"
+                    android:text="Enter your email address and we'll send you a link to reset your password"
+                    android:textSize="@dimen/_16sdp"
+                    android:textStyle="normal" />
+
+                <EditText
+                    android:id="@+id/editEnterMailId"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/_4sdp"
+                    android:hint="Email Address"
+                    android:textSize="@dimen/_14sdp" />
+
+                <Button
+                    android:id="@+id/forget_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorPrimary"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="Submit"
+                    android:textColor="@color/colorAccent" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

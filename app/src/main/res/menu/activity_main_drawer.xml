@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:checked="true"
+            android:icon="@drawable/ic_icons8_home"
+            android:title="Home" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_like"
+            android:title="Favorites"
+            android:visible="false" />
+
+        <item
+            android:id="@+id/nav_conversation"
+            android:icon="@drawable/ic_chat"
+            android:title="Conversation"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_purchase"
+            android:icon="@drawable/ic_shopping_bags"
+            android:title="Purchases"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_user"
+            android:icon="@drawable/ic_user"
+            android:title="Username"
+            android:visible="false" />
+        <item
+            android:id="@+id/nav_sign"
+            android:icon="@drawable/ic_credit_card"
+            android:title="Sign In"
+            android:visible="true" />
+
+    </group>
+    <group
+        android:id="@+id/groupsecondid"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_settings_white_24px"
+            android:title="Settings"
+            android:visible="true" />
+        <item
+            android:id="@+id/nav_get_sell"
+            android:icon="@drawable/ic_mu"
+            android:title="Get Sell On MontanaMade"
+            android:visible="true" />
+    </group>
+
+
+</menu>
